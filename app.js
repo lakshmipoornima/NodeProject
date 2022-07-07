@@ -40,10 +40,11 @@ app.use(shopRoutes)
 app.use(userRoutes)
 
 app.use(errorController.getError)
+var port =process.env.PORT||3000
 
 mongoose.connect("mongodb+srv://poornima91:poornima1991@cluster0.qoamf.mongodb.net/cart?retryWrites=true&w=majority")
     .then(() => {
-        app.listen(3000, () => {
+        app.listen(port, () => {
             console.log("Server started listening on port 3000...")
         })
     })
