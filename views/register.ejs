@@ -1,0 +1,22 @@
+<%-include('includes/head.ejs') %>
+    </head>
+
+    <body>
+        <%-include('includes/navigation.ejs') %>
+            <h1 class="centered">Registration Page</h1>
+            <form action="/register" method="post" class="product-form">
+                <div class="form-control">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="form-control">
+                    <label for="password">Password :</label>
+                    <input type="password" name="password">
+                </div>
+                <div>
+                    <button class="btn">
+                        Register
+                </button>
+            </div>
+            </form>
+        <%-include('includes/end.ejs') %>
